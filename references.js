@@ -11,7 +11,11 @@ alert(`example`);
 
 `Estimated tax (${10}%): $${Math.round((799 * 2 + 2095 * 2 + 499 + 499) * (10/100))}`;
 
+//as done above, when dealing with money, use cents and convert to full
+//value by dividing by 100.
+// $5.99 would be:
 
+599 / 100;
 
 //Math.round() is used to round numbers to the nearest value. 
 
