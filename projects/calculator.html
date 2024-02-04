@@ -16,54 +16,58 @@
       Best Calculator
     </p>
     <br/>
-    <button onclick="calculation += `1`; console.log(calculation);">
+    <button onclick="calculation(`1`);">
       1
     </button>
-    <button onclick="calculation += `2`; console.log(calculation);">
+    <button onclick="calculation(`2`);">
       2
     </button>
-    <button onclick="calculation += `3`; console.log(calculation);">
+    <button onclick="calculation(`3`);">
       3
     </button>
     <br/>
-    <button onclick="calculation += `4`; console.log(calculation);">
+    <button onclick="calculation(`4`);">
       4
     </button>
-    <button onclick="calculation += `5`; console.log(calculation);">
+    <button onclick="calculation(`5`);">
       5
     </button>
-    <button onclick="calculation += `6`; console.log(calculation);">
+    <button onclick="calculation(`6`);">
       6
     </button>
     <br/>
-    <button onclick="calculation += `7`; console.log(calculation);">
+    <button onclick="calculation(`7`);">
       7
     </button>
-    <button onclick="calculation += `8`; console.log(calculation);">
+    <button onclick="calculation(`8`);">
       8
     </button>
-    <button onclick="calculation += `9`; console.log(calculation);">
+    <button onclick="calculation(`9`);">
       9
     </button>
     <br/>
-    <button onclick="calculation += ` + `; console.log(calculation);">
+    <button onclick="calculation(` + `);">
       +
     </button>
-    <button onclick="calculation += `0`; console.log(calculation);">
+    <button onclick="calculation(`0`);">
       0
     </button>
-    <button onclick="calculation += ` - `; console.log(calculation);">
+    <button onclick="calculation(` - `);">
       -
     </button>
     <br/>
-    <button onclick="eval(calculation); calculation = eval(calculation); console.log(calculation);">
+    <button onclick="numberEntry = eval(numberEntry); console.log(numberEntry);">
       =
     </button>
-    <button onclick="calculation = ``; console.log(`0`);">
+    <button onclick="numberEntry = `0`; console.log(numberEntry);">
       Clear
     </button>
     <script>
-      let calculation = ``;
+      let numberEntry = ``;
+      function calculation(number) {
+        numberEntry = numberEntry + number;
+        console.log(numberEntry);
+      }
     </script>
   </body>
 </html>
