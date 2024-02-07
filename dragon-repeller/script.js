@@ -98,7 +98,7 @@ const locations = [
     name: "lose back town",
     "button text": ["Go to town square", "Go to town square", "Go to town square"],
     "button functions": [goTown, goTown, goTown],
-    text: "Wrong! Lose 10 health!"
+    text: "Wrong! You lose 10 health!"
   }
 ];
 
@@ -131,13 +131,13 @@ function goCave() {
 }
 
 function buyHealth() {
-  if (gold >= 10) {
+  if (gold >= 10 && health <= 90) {
     gold -= 10;
     health += 10;
     goldText.innerText = gold;
     healthText.innerText = health;
   } else {
-    text.innerText = "You do not have enough gold to buy health.";
+    text.innerText = "You are unable to buy more health.";
   }
 }
 
@@ -280,9 +280,6 @@ function pick(guess) {
   const numbers = [];
   while (numbers.length < 10) {
     numbers.push(Math.floor(Math.random() * 11));
-  }
-  for (let i = 0; i < 10; i++) {
-    text.innerText += numbers[i] + "\n";
   }
   if (numbers.includes(guess)) {
     update(locations[8]);
