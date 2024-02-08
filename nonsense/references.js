@@ -38,3 +38,34 @@ Math.ceil();
 
 //celsius
 (fahrenheit - 32) * (5/9)
+
+
+let animals = [`cow`, `dog`, `cat`];
+let s = ``;
+
+for (let i = 0; i < animals.length; i++) {
+  s += animals[i] + `, `;
+}
+
+
+
+let inventory = [
+  {
+    'name': `Cotton Shirt`,
+    'weight': 5
+  },
+  {
+    'name': `Knife`,
+    'weight': 2
+  },
+  {
+    'name': `Gorro barato`,
+    'weight': 3
+  }
+]
+
+let s = 0;
+
+for(let i = 0; i < inventory.length; i++) {
+  s += inventory[i].weight;
+}
