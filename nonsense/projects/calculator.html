@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      #1 Calculator
+    </title>
+    <meta charset="utf-8"/>
+    <style>
+      button {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Best Calculator
+    </p>
+    <br/>
+    <button onclick="calculation(`1`);">
+      1
+    </button>
+    <button onclick="calculation(`2`);">
+      2
+    </button>
+    <button onclick="calculation(`3`);">
+      3
+    </button>
+    <br/>
+    <button onclick="calculation(`4`);">
+      4
+    </button>
+    <button onclick="calculation(`5`);">
+      5
+    </button>
+    <button onclick="calculation(`6`);">
+      6
+    </button>
+    <br/>
+    <button onclick="calculation(`7`);">
+      7
+    </button>
+    <button onclick="calculation(`8`);">
+      8
+    </button>
+    <button onclick="calculation(`9`);">
+      9
+    </button>
+    <br/>
+    <button onclick="calculation(` + `);">
+      +
+    </button>
+    <button onclick="calculation(`0`);">
+      0
+    </button>
+    <button onclick="calculation(` - `);">
+      -
+    </button>
+    <br/>
+    <button onclick="numberEntry = eval(numberEntry); console.log(numberEntry);">
+      =
+    </button>
+    <button onclick="numberEntry = `0`; console.log(numberEntry);">
+      Clear
+    </button>
+    <script>
+      let numberEntry = ``;
+      function calculation(number) {
+        numberEntry = numberEntry + number;
+        console.log(numberEntry);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+    Add to cart
+  </title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p>
+    Cart Quantity
+  </p>
+
+  <button onclick="console.log(cartQuantity);">
+    Show Quantity
+  </button>
+  <!--
+
+    Using cartQuantity = cartQuantity + 1;
+    cartQuantity += 1;
+    and cartQuantity++; yield the same result.
+
+  -->
+  <button onclick="addToCart(+1);">
+    Add to Cart
+  </button>
+
+  <button onclick="addToCart(+2);">
+    +2
+  </button>
+
+  <button onclick="addToCart(+3);">
+    +3
+  </button>
+
+  <button onclick="addToCart(+4);">
+    +4
+  </button>
+
+  <button onclick="addToCart(+5);">
+    +5
+  </button>
+
+  <br/>
+
+  <button onclick="addToCart(-1);">
+    -1
+  </button>
+
+  <button onclick="addToCart(-2);">
+    -2
+  </button>
+
+  <button onclick="addToCart(-3);">
+    -3
+  </button>
+
+  <button onclick="cartQuantity = 0; console.log(`Cart was reset. Cart quantity ${cartQuantity}.`);">
+    Reset Cart
+  </button>
+  <script>
+    let cartQuantity = 0;
+
+    function addToCart(change) {
+      if (cartQuantity + change > 10) {
+        alert(`The cart is full`);
+        return;
+      } 
+
+      if (cartQuantity + change < 0) {
+        alert(`There are not enough items in cart`);
+        return;
+      }
+
+      cartQuantity += change;
+      console.log(`Cart quantity: ${cartQuantity}.`);
+    }
+  </script>
+</body>
+</html>
