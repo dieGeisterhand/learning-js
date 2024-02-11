@@ -5,3 +5,15 @@ const plantNeedsWater = (day) => {
     return false;
   }
 };
+
+
+
+// this 
+
+const squareNum = (num) => {
+  return num * num;
+};
+
+// can be refactored to
+
+const squareNum = num => num * num;
