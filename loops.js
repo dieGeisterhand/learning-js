@@ -22,3 +22,23 @@ for (let i = 0; i < bobsFollowers.length; i++) {
     }
   }
 }
+
+
+
+
+
+
+
+for (let i = 1; i < 4; i++) {
+  console.log(i);
+}
+
+
+
+// while loop. for loop that achieves the same result above for reference. notice the global variable established before.
+
+let i = 1;
+while (i < 4) {
+  console.log(i);
+  i++;
+}
