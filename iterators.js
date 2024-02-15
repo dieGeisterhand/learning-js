@@ -7,6 +7,16 @@ artists.forEach(artist => {
 });
 
 
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+// forEach()
+fruits.forEach(fruits => {
+  console.log(`I want to eat a ${fruits}`);
+});
+
+
+
+
 
 
 const numbers = [1, 2, 3, 4, 5];
