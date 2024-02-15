@@ -37,3 +37,30 @@ const onlyNumbers = things.filter(thing => {
 
 console.log(onlyNumbers);
 
+
+const bigNumbers = [100, 200, 300, 400, 500];
+const smallNumbers = [];
+
+for (let i = 0; i < bigNumbers.length; i++) {
+  smallNumbers.push(bigNumbers[i] / 100);
+}
+
+console.log(smallNumbers);
+
+
+
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+const smallNumbers = randomNumbers.filter(num => {
+  return num < 250;
+})
+
+
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+
+const longFavoriteWords = favoriteWords.filter(words => {
+  return words.length > 7;
+})
