@@ -17,3 +17,6 @@ const squareNum = (num) => {
 // can be refactored to
 
 const squareNum = num => num * num;
+
+
+// https://discuss.codecademy.com/t/what-is-the-syntax-for-arrow-functions/438372
