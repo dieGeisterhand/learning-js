@@ -35,3 +35,12 @@ let spaceship = {
 spaceship.color = 'glorious gold';
 spaceship.numEngines = 4;
 delete spaceship['Secret Mission'];
+
+
+// functions can also be stored in objects.
+
+const alienShip = {
+  invade: function () { 
+    console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.')
+  }
+};
