@@ -138,3 +138,40 @@ let spaceship = {
 const capFave = spaceship.crew.captain['favorite foods'][0]; // 'cookies'
 
 const firstPassenger = spaceship.passengers[0]; // selecting name object
+
+
+// functions which change object property can mutate the object permanently, even if it's a constant
+
+const spaceship = {
+  homePlanet : 'Earth',
+  color : 'silver'
+};
+ 
+let paintIt = obj => {
+  obj.color = 'glorious gold'
+};
+ 
+paintIt(spaceship);
+ 
+spaceship.color // Returns 'glorious gold'
+
+
+
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+
+function greenEnergy(obj) {
+  obj['Fuel Type'] = 'avocado oil';
+};
+
+function remotelyDisable(obj) {
+  obj.disabled = true;
+};
+
+greenEnergy(spaceship);
+remotelyDisable(spaceship);
+
+console.log(spaceship);
