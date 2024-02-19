@@ -44,3 +44,11 @@ const alienShip = {
     console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.')
   }
 };
+
+// With the new method syntax introduced in ES6 we can omit the colon and the function keyword.
+
+const alienShip = {
+  invade () { 
+    console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.')
+  }
+};
