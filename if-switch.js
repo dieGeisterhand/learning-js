@@ -8,7 +8,7 @@ userName ? console.log(`Hello, ${userName}!\n`) : console.log(`Hello!\n`);
 let eightBall = ``;
 
 console.log(userQuestion);
-
+/*
 if (randomNumber === 0) {
   eightBall = `It is certain`;
 } else if (randomNumber === 1) {
@@ -26,8 +26,8 @@ if (randomNumber === 0) {
 } else if (randomNumber === 7) {
   eightBall = `Sign point to yes`;
 }
+*/
 
-/*
 switch (randomNumber) {
   case 0:
   eightBall = `It is certain`;
@@ -53,7 +53,7 @@ switch (randomNumber) {
   case 7:
   eightBall = `Sign point to yes`;
   break;
-} */
+} 
 
 console.log(eightBall);
 
