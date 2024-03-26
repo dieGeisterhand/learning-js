@@ -71,3 +71,68 @@ function howOld(age, year) {
 
 
 console.log(howOld(29, 1990));
+
+function tipCalculator(quality, total) {
+  switch (quality) {
+    case 'bad':
+    console.log('bad');
+    return total * 0.05;
+    break;
+
+    case 'ok':
+    console.log('ok');
+    return total * 0.15;
+    break;
+
+    case 'good':
+    console.log('good');
+    return total * 0.20;
+    break;
+
+    case 'excellent':
+    console.log('excellent');
+    return total * 0.30;
+    break;
+
+    default:
+    console.log('default');
+    return total * 0.18;
+  }
+}
+
+
+console.log(tipCalculator('good', 100)) //should return 20
+
+
+function toEmoticon(emoji) {
+  switch (emoji) {
+    case 'shrug':
+    return '|_{"}_|';
+    break;
+
+    case 'smiley face':
+    return ':)';
+    break;
+
+    case 'frowny face':
+    return ':(';
+    break;
+
+    case 'winky face':
+    return ';)';
+    break;
+
+    case 'heart':
+    return '<3';
+    break;
+
+    default:
+    return '|_(* ~ *)_|';
+    break;
+  }
+}
+
+console.log(toEmoticon("whatever")) 
+// Should print  '|_(* ~ *)_|'
+
+
