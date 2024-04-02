@@ -1,4 +1,20 @@
 
+// concise body arrow functions
+
+// zero parameters
+
+const functionName = () => {};
+
+// one parameter
+
+const functionName = paramOne => {};
+
+// two or more parameters
+
+const functionName = (paramOne, paramTwo) => {};
+
+
+
 
 // this 
 
