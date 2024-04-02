@@ -7,7 +7,7 @@ const functionName = () => {};
 
 // one parameter
 
-const functionName = paramOne => {};
+const functionName = (paramOne) => {};
 
 // two or more parameters
 
@@ -51,4 +51,5 @@ const plantNeedsWater = (day) => {
 const plantNeedsWater = day => day === 'Wednesday' ? true : false;
                   // argument - implied return    if      output
 
-
+// the previous declaration does not use brackets and has an implied return because
+// the function consists of a single-line block.
